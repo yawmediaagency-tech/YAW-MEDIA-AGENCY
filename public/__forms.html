@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Formulários — YAW Media Agency</title>
+  </head>
+  <body>
+    <!--
+      Ficheiro técnico para o Netlify Forms (não é uma página do site).
+      O Netlify lê este ficheiro durante o deploy para registar o formulário
+      "contacto" e os seus campos. O site envia os pedidos para este caminho
+      (ver src/lib/contact-client.ts). Se acrescentar um campo ao formulário,
+      acrescente-o também aqui.
+    -->
+    <form name="contacto" data-netlify="true" netlify-honeypot="website" hidden>
+      <input type="hidden" name="form-name" value="contacto" />
+      <input type="hidden" name="subject" />
+      <input type="hidden" name="origem" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="company" />
+      <input type="text" name="service" />
+      <textarea name="message"></textarea>
+      <input type="text" name="website" />
+    </form>
+  </body>
+</html>

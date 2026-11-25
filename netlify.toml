@@ -1,0 +1,17 @@
+# Configuração de deploy no Netlify.
+# O Netlify deteta o Next.js e instala automaticamente o adaptador oficial
+# (OpenNext) — não é preciso instalar nenhum plugin.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+# Ficheiros do convite digital (Banco YETU 11 anos): cache longa no browser
+[[headers]]
+  for = "/casos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
